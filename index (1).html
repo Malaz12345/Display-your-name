@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Name on Click</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #showNameBtn {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #nameDiv {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="showNameBtn">Show My Name</button>
+
+  <div id="nameDiv"></div>
+
+  <script>
+    document.getElementById('showNameBtn').addEventListener('click', function () {
+      document.getElementById('nameDiv').textContent = 'Malaz Tariq';
+    });
+  </script>
+
+</body>
+</html>
